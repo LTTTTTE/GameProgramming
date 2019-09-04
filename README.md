@@ -5,3 +5,4 @@
 - JavaScript
 - CSS 
 - Visual Studio Code
+- IntelliJ
