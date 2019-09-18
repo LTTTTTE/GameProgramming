@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="test05.js"></script>
+</head>
+<body>
+    <div id="idd" style="position: absolute; top: 25px;left: 700px" >
+        Test
+    </div>
+</body>
+<script>
+
+    document.getElementById('idd').addEventListener('wheel',(arg)=>{
+        arg.target.style.color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        arg.target.style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    })
+
+</script>
+</html>
