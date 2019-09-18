@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    localStorage.setItem("highScore","152400");
+    var highScore = localStorage.getItem("highScore");
+
+    var newDiv = document.createElement('DIV');
+    newDiv.innerHTML = "highScore : " + highScore;
+    newDiv.id = "newDiv";
+
+    document.body.appendChild(newDiv);
+
+
+
+
+    document.getElementById('newDiv').addEventListener('wheel',(arg)=>{
+        arg.target.style.color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        arg.target.style.backgroundColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+    })
+</script>
+</html>
