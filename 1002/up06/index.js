@@ -35,6 +35,8 @@ function onGameStart() {
     arrMissiles.push({x:800,y:0,go_x: -1,go_y: 1});
     arrMissiles.push({x:800,y:600,go_x: -1,go_y: -1});
     arrMissiles.push({x:0,y:600,go_x: 1,go_y: -1});
+    arrMissiles.push({x:400,y:600,go_x: 1,go_y: -1});
+    arrMissiles.push({x:800,y:300,go_x: -1,go_y: -1});
 }
 
 function onGameOver() {
